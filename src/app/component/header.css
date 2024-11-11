@@ -1,0 +1,151 @@
+/* Base styles for the header */
+.header {
+    background-color: #1e293b;
+    padding: 1rem;
+    width: 100%;
+    position: fixed;
+   
+    top: 0;
+    z-index: 1000;
+
+}
+
+/* Container for header content */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 80px;
+    padding: 0 1rem;
+}
+
+/* Logo */
+.logo {
+    
+    margin-right: 1rem;
+    
+     border-radius: 50%;
+}
+
+
+.titl {
+    font-size: 1.2rem;
+color: white;
+    font-weight: bold;
+    flex: 1;
+    text-align: center;
+    animation: textGlow 3s infinite;
+   
+    
+
+    
+}
+
+
+@media (min-width: 768px) {
+    .titl {
+        text-align: left;
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .titl {
+        font-size: 2rem;
+    }
+} 
+
+
+
+/* Hamburger button */
+.hamburger {
+    color: #f1f5f9;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+}
+
+/* Icon inside the hamburger button */
+.icon {
+    width: 32px;
+    height: 32px;
+}
+
+/* Hide navigation links by default for small screens */
+.nav-links {
+    display: none;
+}
+
+/* Nav item styling */
+.nav-item {
+    color: #f1f5f9;
+    text-decoration: none;
+    font-size: 1rem;
+    margin-right: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-item:hover {
+    color: rgb(0, 132, 255);
+}
+
+/* Display nav links on medium and large screens */
+@media (min-width: 768px) {
+    .nav-links {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .nav-item {
+        font-size: 1.125rem;
+        margin-right: 1.5rem;
+    }
+    
+}
+
+/* Adjust nav item size and spacing on larger screens */
+@media (min-width: 1024px) {
+    .nav-item {
+        font-size: 1.25rem;
+        margin-right: 2rem;
+    }
+}
+
+/* Mobile menu styling for small screens */
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1e293b;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+/* Mobile nav item styling */
+.mobile-nav-item {
+    color: #f1f5f9;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.mobile-nav-item:hover {
+    color: rgb(0, 132, 255);
+}
+
+/* Hide mobile menu on medium and larger screens */
+@media (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+}
+
+/* Ensure hamburger button hides on larger screens */
+@media (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+}

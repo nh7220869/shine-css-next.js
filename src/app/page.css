@@ -1,0 +1,259 @@
+@keyframes slideBackground {
+    0% {
+        background-image: url('/home.jpg');
+    }
+    33% {
+        background-image: url('/image1.jpg');
+    }
+    66% {
+        background-image: url('/image2.jpg');
+    }
+    100% {
+        background-image: url('/image3.jpg');
+    }
+}
+
+.main-container {
+    animation: slideBackground 15s infinite;
+    background-size: cover;
+    background-position: center;
+    height: 105vh; /* Adjust as needed */
+    width: 100%;
+    margin-top: -1.8cm;
+}
+
+/* Desktop Styles */
+.desktop-only {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .desktop-only {
+        display: block;
+    }
+
+    .text-section-desktop {
+        margin-top: 4rem;
+        padding: 1rem;
+        border-radius: 8px;
+        text-align: center;
+        font-family: 'Arial', sans-serif;
+    }
+
+    .title {
+        font-weight: 800;
+        font-size: 1.5cm;
+        line-height: 1.2;
+        color: #333;
+        text-align: center;
+        margin-top: 8cm;
+    }
+
+    .title .highlight {
+        background-color: #fdecd1;
+        padding: 0 4px;
+        display: inline-block;
+    }
+
+    .title .regular {
+        color: rgb(0, 132, 255);
+    }
+
+    .description {
+        margin-top: 1.5rem;
+        font-size: 1rem;
+        color: #000000;
+        margin: 0 5cm;
+    }
+
+    .button-container {
+        margin-top: 1.5rem;
+        text-align: center;
+    }
+
+    .contact-button,
+    .explore-button {
+        background-color: #ffebcd;
+        color: rgb(0, 132, 255);
+        padding: 0.5rem 1rem;
+        border: 2px solid rgb(0, 132, 255);
+        border-radius: 8px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .explore-button {
+        margin-left: 9cm;
+        margin-bottom: 3cm;
+    }
+
+    .contact-button:hover,
+    .explore-button:hover {
+        background-color: rgb(0, 132, 255);
+        color: white;
+    }
+
+    .info-section-desktop {
+        margin-top: 2rem;
+        padding: 1rem;
+        text-align: left;
+        margin-bottom: 10cm;
+    }
+
+    .sections-title {
+        font-size: 1cm;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        font-family: serif;
+        margin-left: 3.5cm;
+        animation: shake 0.5s ease-in-out;
+    }
+
+    .section-text {
+        font-size: 1rem;
+        margin: 0 14cm 1rem 3.5cm;
+    }
+
+    .info-image-desktop {
+        height: 8cm;
+        display: block;
+        margin-top: -17cm;
+        margin-right: 150px;
+        margin-bottom: 2cm;
+        margin-left: auto;
+    }
+}
+
+/* Mobile Styles */
+.mobile-only {
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .mobile-only {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .main-container {
+        animation: slideBackground 15s infinite;
+        background-size: cover; /* Ensures the image covers the container */
+        background-position: top center; /* Focuses on the top of the image */
+        height: 60vh;
+        width: 100%;
+        margin-top: 3cm;
+    }
+
+    .text-section-mobile {
+        font-size: 14px;
+        padding: 1rem;
+        text-align: center;
+        color: #000000;
+    }
+
+    .titleM {
+        font-size: 2rem;
+        line-height: 1.2;
+        text-align: center;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .titleM .highlightM {
+       
+        padding: 0 4px;
+        display: inline-block;
+        margin-top: 3.5cm;
+    }
+
+    .titleM .regularM {
+        color: rgb(0, 132, 255);
+    }
+
+    .descriptionM {
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+        padding: 0 1rem;
+        font-size: 0.9rem;
+        line-height: 1.4;
+        color: #000000;
+        text-align: center;
+    }
+
+    .button-container {
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .contact-button {
+        background-color: #ffebcd;
+        color: rgb(0, 132, 255);
+        padding: 0.4rem 1.2rem;
+        border: 2px solid rgb(0, 132, 255);
+        border-radius: 6px;
+        font-weight: bold;
+        text-decoration: none;
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    .contact-button:hover {
+        background-color: rgb(0, 132, 255);
+        color: white;
+    }
+
+    .info-section.mobile {
+        padding: 1rem;
+        text-align: center;
+        color: #000000;
+    }
+
+    .sections-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        color: #333;
+        
+    }
+
+    .section-text {
+        font-size: 0.9rem;
+        line-height: 1.4;
+        padding: 0 1rem;
+        color: #000000;
+    }
+
+    .info-image.mobile {
+        margin-left: auto;
+        margin-right: auto;
+        max-height: 200px;
+       
+        
+       
+        
+    }
+
+    .explore-button-container {
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .explore-button {
+        background-color: #ffebcd;
+        color: rgb(0, 132, 255);
+      
+        border: 2px solid rgb(0, 132, 255);
+        padding: 0.4rem 1.2rem;
+        border-radius: 6px;
+        font-weight: bold;
+        text-decoration: none;
+        display: inline-block;
+        margin-bottom: 2cm;
+    }
+
+    .explore-button:hover {
+        background-color: rgb(0, 132, 255);
+        color: white;
+    }
+}
